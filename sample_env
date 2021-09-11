@@ -1,0 +1,9 @@
+# replace this file name as .env and add values to below mentioned variables
+DATABASE_NAME = ''
+DATABASE_USER = ''
+DATABASE_PASSWORD = ''
+DATABASE_HOST = ''
+DATABASE_PORT = ''
+BOT_TOKEN = ""
+SECRET_KEY = ''
+TELEGRAM_URL = "https://api.telegram.org/bot"
