@@ -21,16 +21,16 @@ To get this running, you need the following. First install dependencies
 
 ### Step 0 : Clone the Repository
 
-`https://github.com/sibinms/django-bot.git`
-`cd django-bot`
-`virtualenv -p python3 venv`
-`source venv/bin/activate`
+-`https://github.com/sibinms/django-bot.git`
+-`cd django-bot`
+-`virtualenv -p python3 venv`
+-`source venv/bin/activate`
 
 ### Step 1 : Install dependencies and set up an .env file
 
 `pip install -r requirements.txt`
 after installing all the requirements, look for the sample_env file in the directory and rename it to .env
-and add the mentioned env variable values. If you are not sure about all f them , keep reading this Readme
+and add the mentioned env variable values. If you are not sure about all of them , keep reading this Readme
 
 ### Step 2 : Run migrations
 
