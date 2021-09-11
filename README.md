@@ -37,22 +37,41 @@ To get this running, you need the following. First install dependencies
 ### Step 1 : Install dependencies and set up an .env file
 
 `pip install -r requirements.txt`
-after installing all the requirements, look for the sample_env file in the directory and rename it to .env
-and add the mentioned env variable values. If you are not sure about all of them , keep reading this Readme
+
+
+after installing all the requirements, look for the `sample_env` file in the directory and rename it to `.env`
+and add the mentioned env variable values. 
+
+If you are not sure about all of them , keep reading this Readme.md
 
 ### Step 2 : Run migrations
 
 In this Project we used a Postgresql DB , if you are not aware about it try to read it on this link 
 (https://www.postgresqltutorial.com/install-postgresql-linux/) and install it on your system.
+
+
 After the installation create user and database give that details to .env file
 
 `sudo -u postgres createuser -sPE user_name`
+
+
 `sudo -u postgres createdb db_name`
+
+
 
 There is a model named BotUser which basically stores the user details with unique telegram user-ID , name and the number of clicks 
 
 `python manage.py makemigrations`
+
+
 `python manage.py migrate`
+
+Create a super user if you wanted to see the admin page
+
+
+`python manage.py createsuperuser`
+
+
 
 ### Step 3 : Start the local server
 
@@ -77,6 +96,7 @@ Copy the token and paste in `.env` file
 ### Step 6 : Set your webhook by sending a GET request to the Telegram API
 
 You can use POSTMAN for creating a webhook with Telegram 
+
 - Request type is "GET"
 - copy and paste the below URL in your POSTMAN and replace the variables specified with in < >
 - `https://api.telegram.org/bot<BOT-TOKEN>/setWebhook?url=<ngrok https url eg:https://d852-106-76-51-232.ngrok.io>/webhooks/tutorial/`
