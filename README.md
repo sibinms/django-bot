@@ -1,4 +1,4 @@
-# django-bot
+# Telegram Joke bot with static jokes
 Django based Telegram Joke bot with static jokes
 # Intro
 
